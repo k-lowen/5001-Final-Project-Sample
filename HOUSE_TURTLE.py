@@ -367,6 +367,10 @@ def yikes(turtle):
 
 
 
+def welcome(turtle):
+    turtle.color("red")
+    style = ("Comic Sans", 100, "bold")
+    turtle.write("Welcome Home...", font = style, align = "center")
 
 
 
@@ -382,13 +386,16 @@ def yikes(turtle):
 def main():
     house_turtle = turtle.Turtle()
     background_colour = "black"
-    turtle_colour_space = "red"
+    house_turtle.shape("turtle")
 
     window = turtle.Screen()
     window.bgcolor(background_colour)
 
+    #welcome(house_turtle)
+    window.exitonclick()
 
-    house_turtle.shape("turtle")
+
+
 
     house_turtle.speed(2)
     house_turtle.width(10)
@@ -398,12 +405,12 @@ def main():
     #correct_decision_one(house_turtle)
     #correct_decision_2(house_turtle)
     #correct_decision_three(house_turtle)
-    correct_decision_four(house_turtle)
+    #correct_decision_four(house_turtle)
     #correct_decision_five(house_turtle)
-    #decision_one_right(house_turtle, "left")
+    #decision_one_right(house_turtle, "right")
     #decision_two_right(house_turtle, "right")
     #decision_three_left(house_turtle, "right")
-    #decision_four_right(house_turtle, "right")
+    decision_four_right(house_turtle, "right")
     #decision_five_left(house_turtle, "right")
     #decision_six_left(house_turtle, "left")
 
